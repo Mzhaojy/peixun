@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .box{
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            font-size:13px;
+        }
+        .ctr-box{
+            width: 100%;
+
+            display: flex;
+        }
+        .ctr-body{
+            width: 350px;
+
+            height: 150px;
+        }
+        .singer{
+            margin: 30px 0 0 30px;
+        }
+        .bar{
+            width: 300px;
+            position: relative;
+            margin: 15px 0;
+        }
+        .total{
+            width: 200px;
+            height: 2px;
+            background-color: red;
+
+        }
+        .now{
+            width: 200px;
+            height: 2px;
+            background-color: blue;
+            margin: -2px;
+        }
+        .ctr-bar{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #7d7d7d;
+            position: absolute;
+            top: -3px;
+            left: 0;
+
+        }
+        .ctr-pic{
+            width: 150px;
+        }
+        .ctr-pic img{
+            width: 100%;
+            border-radius: 50%
+        }
+
+        .time{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+        .ctr-btn{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 20px 0px 0px 20px;
+        }
+        .ctr-btn div{
+            background: url("lzht02.png")no-repeat;
+        }
+        .ctr-btn .prev{
+            width: 20px;
+            height: 20px;
+            background-position-y: -29px;
+        }
+        .ctr-btn .start{
+            width: 20px;
+            height: 30px;
+            background-position-y: 1px;
+        }
+        .ctr-btn .next{
+            width:20px;
+            height: 20px;
+            background-position-y: -50px;
+        }
+        body{
+            background-color: pink;
+        }
+        .ctr-btn .volume{
+            width: 25px;
+            height: 23px;
+            background-position-y: -141px;
+        }
+        .ctr-btn .mode{
+            width: 28px;
+            height: 19px;
+            background-position-y: -74px;
+        }
+        .list-box{
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+
+
+        }
+        .list-box li{
+            height: 20px;
+            line-height: 60px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px dashed#666; ;
+        }
+    </style>
+</head>
+<body>
+<!--大盒子-->
+<div class="box">
+    <!--控制组件盒子-->
+    <div class="ctr-box">
+        <!--专辑封面-->
+        <div class="ctr-pic">
+            <img src="lzht.jpg" alt="">
+        </div>
+        <div class="ctr-body">
+            <!--歌曲名-->
+            <div class="singer">
+                <span>飘向北方---那吾克热/尤长靖</span>
+            </div>
+            <!--控制条-->
+            <div class="bar">
+                <div class="total"></div>
+                <div class="now"></div>
+                <div class="ctr-bar"></div>
+                <p class="time">
+                    <span class="current">00:00</span>
+                    <span class="totalTime">00:00</span>
+                </p>
+            </div>
+            <!--控制按钮-->
+            <div class="ctr-btn">
+                <div class="prev"></div>
+                <div class="start"></div>
+                <div class="next"></div>
+                <div class="volume"></div>
+                <div class="mode"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--音乐列表盒子-->
+    <div class="list-box">
+        <ul>
+            <li><span>浪子回头</span><span>王玉萌</span></li>
+            <li><span>浪子回头</span><span>王玉萌</span></li>
+            <li><span>浪子回头</span><span>王玉萌</span></li>
+            <li><span>浪子回头</span><span>王玉萌</span></li>
+
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+{
+song:'飘向北方',
+singer:'那吾克热/尤长靖',
+pic:'1.jpg',
+
+},{
+song:'Lost Good Things(童话破灭)',
+singer:'陈光荣',
+pic:'2.jpg',
+
+},{
+song:'爱',
+singer:'墨绿森林',
+pic:'3.jpg',
+
+}
